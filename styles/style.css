@@ -16,9 +16,7 @@
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    background-color:#bbb8b8;
-    padding-left: 32px;
-    padding-top: 30px;
+    background-color:#f2f2f2;
     position: relative;
     
     /* parameters for the header section */
@@ -32,23 +30,31 @@
     background-image: url(../images/logo.png);
     background-size: cover;
     width: 154px;
+    background-image: cover;
     height: 31px;
     z-index: 1;
+    margin-left: 64px;
+    margin-top: 30px;
+    position: absolute;
     
 }
 
 .header__heading_title {
+    line-height: 96px;
     font-size: 102px;
     font-weight: bold;
     width: 730px;
+    margin-left: 64px;
+    margin-top: 25%;
 }
 
 .header__heading_subtitle {
-    z-index: 2;
-    margin-left: 64p;
-    margin-bottom: 30px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 64px;
+    bottom: 30px;
     width: 388px;
-    height: 25px;
+    line-height: 25px;
     font-size: 18px;
     font-weight: normal;
 }
@@ -59,8 +65,6 @@
 }
 
 .header__img_main-illustration {
-    background-image: url(../images/on_the_edge.png); /*maybe change to image element in html and insert alt */
-    background-size: cover;
     margin-bottom: 0;
     margin-right: 0;
     width: 765px;
@@ -201,12 +205,15 @@
 
 .feinman {
     height: 790px;
-    position: relative
+    position: relative;
+    background-color:#f2f2f2;
+    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .section__heading_title_feinman {
     width: 770px;
-    margin: 100px auto 0;
+    margin: 0 auto 0;
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
@@ -330,7 +337,7 @@
 
 .section_kaufman__image_blue-triangle{
     right: -210px;
-    bottom: 0;
+    top: -16px;
     position: absolute;
     width: 877px;
     height: 877px;
@@ -384,11 +391,14 @@
     font-weight: bold;
 }
 
-.footer__column-info_links {
+.footer__column-info_div_links {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 16px;
+}
+
+.footer__column-info_links {
     text-decoration: none;
     line-height: 30px;
     font-size: 18px;
@@ -412,7 +422,7 @@
     color: #2f2f2f;
 }
 
-.footer__column-social_icon {
+.table__table_data_social-icon {
     width: 16px;
     height: 16px;
     margin-right: 10px;
