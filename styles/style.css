@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .page {
     min-width: 1100px;
     /* we don't know how to make mobile versions of websites yet, */
@@ -22,33 +26,25 @@
     /* parameters for the header section */
 }
 
-.header__title-wrapper {
-    flex-basis: 50%;
-}
-
-.logo__place_header {
-    background-image: url(../images/logo.png);
-    background-size: cover;
+.header__logo_place_header {
     width: 154px;
-    background-image: cover;
     height: 31px;
     z-index: 1;
     margin-left: 64px;
     margin-top: 30px;
-    position: absolute;
-    
 }
 
-.header__heading_title {
+.header__title {
     line-height: 96px;
     font-size: 102px;
     font-weight: bold;
     width: 730px;
     margin-left: 64px;
-    margin-top: 25%;
+    position: absolute;
+    top: 25%;
 }
 
-.header__heading_subtitle {
+.header__subtitle {
     position: absolute;
     z-index: 1;
     margin-left: 64px;
@@ -59,12 +55,12 @@
     font-weight: normal;
 }
 
-.header__link_learn-more {
+.header__link {
     color: #44a2ef;
     text-decoration: none;
 }
 
-.header__img_main-illustration {
+.header__main-illustration {
     margin-bottom: 0;
     margin-right: 0;
     width: 765px;
@@ -77,20 +73,16 @@
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
-    margin-top: 64px;
-    margin-right: 0;
     background-color: #2f80ed;
     width: 568px;
     height: 568px;
     position: absolute;
+    top: 64px;
     right: 0;
-    
-    
 }
 
-.description {
+.two-columns {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin: 100px auto;
     width: 80%;
@@ -98,37 +90,32 @@
     
 }
 
-.section__div_brief {
+.two-columns__brief {
     width: 175px;
     line-height: 1.2;
     font-size: 18px;
     color: #5898ec;
+    flex-direction: column;
 }
 
-.section__div_main-text {
+.two-columns__main-text {
     line-height: 34px;
     font-size: 24px;
     width: 80%;
-    
-    
+    flex-direction: column;
 }
 
-.div__div_paragraph-1 {
+.two-columns__paragraph-main {
     padding-bottom: 30px;
 }
 
-.div__div_paragraph-2 {
+.two-columns__paragraph-conclusion {
     padding-bottom: 30px;
 }
 
-.bold {
+.two-columns__span-accent {
     font-weight: bold;
 }
-
-.div__div_paragraph-3 {
-
-}
-
 .digits {
     display: flex;
     flex-direction: column;
@@ -138,7 +125,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 60vh;
+    width: 60%;
     padding-bottom: 20px;
     line-height: 69px;
     font-size: 60px;
@@ -147,7 +134,7 @@
 }
 .section__heading_subheading {
     margin: auto;
-    width: 60vh;
+    width: 60%;
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
@@ -203,7 +190,7 @@
     margin-top: 20px;
 }
 
-.feinman {
+.feynman {
     height: 790px;
     position: relative;
     background-color:#f2f2f2;
@@ -211,7 +198,7 @@
     margin-top: 100px;
 }
 
-.section__heading_title_feinman {
+.section__heading_title_feynman {
     width: 770px;
     margin: 0 auto 0;
     line-height: 1.15;
@@ -231,7 +218,7 @@
     position: relative;
 }
 
-.section__link_feinman {
+.section__link_feynman {
     right: 48px;
     top: 50%;
     z-index: 1;
@@ -244,13 +231,12 @@
     margin-top: -50px;
 }
 
-.section__image_feinman {
-    
+.section__image_feynman {
     width: 867px;
     height: 637px;
     position: absolute;
     bottom: 0;
-    
+    left: 0;
 }
 
 
@@ -358,8 +344,6 @@
 }
 
 .logo__place_footer {
-    background-image: url(../images/logo_white.png);
-    background-size: cover;
     display: flex;
     width: 183px;
     height: 35px;
@@ -386,26 +370,30 @@
 
 .footer__column-info_heading {
 
-    line-height: 45px;
-    font-size: 18px;
-    font-weight: bold;
+    line-height: 45px; 
+     font-size: 18px; 
+     font-weight: bold; 
 }
 
-.footer__column-info_div_links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 16px;
+.footer__column_list-of-links {
+    text-decoration: none; 
+     line-height: 30px; 
+     font-size: 18px; 
+     font-weight: normal; 
+     color: #2f2f2f;
+    list-style-type: none;
+    padding-left: inherit;
 }
 
-.footer__column-info_links {
+.footer__column_links {
     text-decoration: none;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    color: #2f2f2f;
+    color:#2f2f2f;
 }
 
+.footer__column_content_social {
+    list-style-type: none;
+    padding-left: inherit;
+}
 .footer__column-social_heading{
     margin-bottom: 20px;
     line-height: 45px;
@@ -420,9 +408,10 @@
     font-size: 18px;
     font-weight: normal;
     color: #2f2f2f;
+    
 }
 
-.table__table_data_social-icon {
+.footer__column-social_icon {
     width: 16px;
     height: 16px;
     margin-right: 10px;
