@@ -28,7 +28,7 @@ body{
     /* parameters for the header section */
 }
 
-.header__logo_place_header {
+.logo__place_header {
     position: absolute;
     width: 154px;
     height: 31px;
@@ -120,7 +120,7 @@ body{
     flex-direction: column;
 }
 
-.digits__title {
+.section-title {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -131,7 +131,7 @@ body{
     font-weight: bold;
     
 }
-.digits__subtitle {
+.section-subtitle {
     margin: auto;
     width: 60%;
     display: flex;
@@ -228,7 +228,7 @@ body{
     color: #000;
 }
 
-.feynman_image {
+.feynman-photo {
     width: 867px;
     height: 637px;
     position: absolute;
@@ -253,7 +253,7 @@ body{
     background-color: #1f1f1f;
 }
 
-.kaufman__heading_theme-dark {
+.section__heading_theme-dark {
     justify-content: center;
     color: white;
     width: 60%;
@@ -266,7 +266,7 @@ body{
     z-index: 1;
 }
 
-.kaufman__subtitle_theme-dark {
+.section__subtitle_theme-dark {
     color: white;
     justify-content: center;
     width: 60%;
@@ -289,15 +289,9 @@ body{
     border-collapse: collapse;
 }
 
-.table__table-row-1_theme-dark {
+.table-row__theme-dark {
     display:flex;
     justify-content: space-between;
-}
-
-.table__table-row-2_theme-dark {
-    display: flex;
-    justify-content: space-between;
-
 }
 
 .table__heading_theme-dark {
