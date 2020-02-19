@@ -104,7 +104,6 @@ body{
     width: 80%;
     flex-direction: column;
     min-width: 784px;
-    width:80%;
     font-weight: normal;
 }
 
@@ -298,6 +297,7 @@ body{
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
+    margin-top: 0;
 }
 
 .table__cell_theme-dark {
@@ -352,7 +352,7 @@ body{
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
-    color: #2f2f2f;
+    color: #4f4f4f;
 }
 
 .footer__column_content-info {
@@ -360,37 +360,23 @@ body{
     flex-direction: column;
 }
 
-.footer__column_heading {
+.footer__column-heading {
 
     line-height: 45px; 
      font-size: 18px; 
      font-weight: bold; 
+     margin-bottom: 20px;
+     color: white;
 }
 
-.footer__column_list-of-links {
+.footer__column-links {
     text-decoration: none; 
      line-height: 30px; 
      font-size: 18px; 
      font-weight: normal; 
-     color: #2f2f2f;
+     color: #4f4f4f;
     list-style-type: none;
     padding-left: 0;
-}
-
-.footer__column_links {
-    text-decoration: none;
-    color:#2f2f2f;
-}
-
-.footer__column_content_social {
-    list-style-type: none;
-    padding-left: inherit;
-}
-.footer__column-social_heading{
-    margin-bottom: 20px;
-    line-height: 45px;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .footer__column-social_links {
@@ -399,8 +385,9 @@ body{
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
-    color: #2f2f2f;
+    color: #4f4f4f;
     text-decoration: none;
+    list-style-type: none;
     
 }
 
