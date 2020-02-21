@@ -137,7 +137,6 @@ body{
     width: 60%;
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
@@ -157,12 +156,7 @@ body{
     padding: 0;
 }
 
-.table__row-one {
-    display: flex;
-    justify-content: space-between;
-}
-
-.table__row-two {
+.table__row {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
@@ -183,7 +177,7 @@ body{
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
-    margin-block-end: 20px;
+    margin-bottom: 20px;
 }
 
 .table__quote {
@@ -237,8 +231,6 @@ body{
     bottom: 0;
     left: 0;
 }
-
-
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
@@ -361,6 +353,7 @@ body{
     line-height: 45px; 
      font-size: 18px; 
      font-weight: bold; 
+     margin-top: 0;
      margin-bottom: 20px;
      color: white;
 }
