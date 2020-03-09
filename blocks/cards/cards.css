@@ -1,0 +1,18 @@
+@import url('./__item/cards__item.css');
+@import url('./__title/cards__title.css');
+@import url('./__description/cards__description.css');
+@import url('./__image/cards__image.css');
+
+.cards {
+    margin: 60px auto;
+    display: grid;
+    width: 920px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px 100px;
+    padding-left: 0;
+}
+
+
+
+

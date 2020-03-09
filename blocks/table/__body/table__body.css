@@ -1,0 +1,5 @@
+.table__body {
+    display: table-cell;
+    margin-bottom: 100px;
+    z-index: 1;
+}
