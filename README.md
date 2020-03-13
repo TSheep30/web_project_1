@@ -1,4 +1,4 @@
-# –Web Project 2
+# Web Project 2
 
 ### Use videos, animations and transformations to improve on the website create in __Project One__. 
 
